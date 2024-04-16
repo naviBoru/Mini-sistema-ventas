@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Practica 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Hamilo</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="inicio.html">
+                        <i class="fas fa-tachometer-alt"></i> Inicio 
+                    </a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-cart-plus"></i> Ventas
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="clientes.html">
+                        <i class="fas fa-users"></i> Clientes
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="productos.html">
+                        <i class="fas fa-cubes"></i> Productos
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="compras.html">
+                        <i class="fas fa-shopping-cart"></i> Compras 
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="proveedores.html">
+                        <i class="fas fa-user-tag"></i> Proveedores
+                    </a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        IVAN PONCE
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Listado de productos</h4>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="">Buscar:</label>
+                                    <input type="search" name="buscar" id="buscar" class="form-control" placeholder="Buscar..." >
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Código</th>
+                                                <th>Producto</th>
+                                                <th>Precio</th>
+                                                <th>Stock</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1001</td>
+                                                <td>Monitor</td>
+                                                <td>100.00</td>
+                                                <td>12</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm" title="Editar" data-toggle="tooltip"> 
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-sm" title="Eliminar" data-toggle="tooltip">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1002</td>
+                                                <td>CPU</td>
+                                                <td>120.00</td>
+                                                <td>15</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm" title="Editar" data-toggle="tooltip"> 
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-sm" title="Eliminar" data-toggle="tooltip">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1003</td>
+                                                <td>Teclado</td>
+                                                <td>15.00</td>
+                                                <td>20</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm" data-toggle="tooltip" title="Editar"> 
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-sm" title="Eliminar" data-toggle="tooltip">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1004</td>
+                                                <td>Mouse</td>
+                                                <td>5.00</td>
+                                                <td>30</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm" title="Editar" data-toggle="tooltip"> 
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-sm" title="Eliminar" data-toggle="tooltip">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1005</td>
+                                                <td>Cable HDMI</td>
+                                                <td>7.00</td>
+                                                <td>20</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm" title="Editar" data-toggle="tooltip"> 
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-sm" title="Eliminar" data-toggle="tooltip">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1006</td>
+                                                <td>Webcam</td>
+                                                <td>10.00</td>
+                                                <td>10</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm" title="Editar" data-toggle="tooltip"> 
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-sm" title="Eliminar" data-toggle="tooltip">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item disabled">
+                                        <a class="page-link">Previous</a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                </nav>
+    
+                            </div>
+
+
+
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h4 class="card-title">Datos del producto</h4>
+                        
+                        <div class="form-group">
+                            <label for="codigo">Código:</label>
+                            <input type="text" name="codigo" id="codigo" class="form-control" placeholder="Ej.: 1001">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="producto">Producto:</label>
+                            <input type="text" name="producto" id="producto" class="form-control" placeholder="Nombre de producto">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="precio">Precio:</label>
+                                    <input type="number" name="precio" id="precio" class="form-control" min="0">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="stock">Stock:</label>
+                                    <input type="number" name="stock" id="stock" class="form-control" min="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="reset" class="btn btn-danger">
+                                <i class="fas fa-ban"></i> Cancelar
+                            </button>
+                            <button type="button" class="btn btn-success">
+                                <i class="fas fa-save"></i> Guardar
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+  </body>
+</html>
